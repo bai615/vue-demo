@@ -2,12 +2,17 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <vuex-test/>
   </div>
 </template>
 
 <script>
+
+import VuexTest from './components/VuexTest'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: { VuexTest }
 }
 </script>
 
